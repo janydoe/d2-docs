@@ -57,9 +57,6 @@ export default function D2CodeBlock(props) {
   }, []);
 
   let theme;
-  let preStyle = {
-    lineHeight: "16px",
-  };
   const { colorMode } = docusaurusThemeCommon.useColorMode();
   switch (colorMode) {
     case "light":
@@ -69,11 +66,6 @@ export default function D2CodeBlock(props) {
       theme = darkTheme;
       break;
   }
-  preStyle.backgroundColor = "#F8F8FB";
-  preStyle.whiteSpace = "pre-wrap";
-  preStyle.padding = "12px";
-  preStyle.fontSize = "12px";
-  preStyle.fontFamily = 'Source Code Pro';
 
   const children = [];
   if (tmGrammar) {
@@ -98,7 +90,7 @@ export default function D2CodeBlock(props) {
     }
   }
 
-  return <pre style={preStyle}>{children}</pre>;
+  return <pre class="code-snippet-code">{children}</pre>;
 }
 
 window.tmGrammars = new Map();
