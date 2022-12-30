@@ -58,4 +58,6 @@ default.
 
 If you want to do UML, C4, BPMN, or any other system or paradigm of diagramming, you should
 be able to. But, D2 does not prescribe to any one true way. A square is just a square in
-D2, but you can call it a use case, node, component -- whatever you want it to be.
+D2, but you can call it a use case, node, component -- whatever you want it to be. A
+system may call a box with thicker stroke width as something special, but D2 will
+never define a special shape when you can just change the `stroke-width`.
