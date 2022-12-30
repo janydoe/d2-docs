@@ -53,3 +53,9 @@ Default, zero-customization D2 should produce good diagrams. That requires being
 opinionated on what a good default should be. For example, D2 ships with a default theme.
 Instead of keeping things open-ended with monochrome shapes, pleasant colors are the
 default.
+
+## No prescribed paradigms
+
+If you want to do UML, C4, BPMN, or any other system or paradigm of diagramming, you should
+be able to. But, D2 does not prescribe to any one true way. A square is just a square in
+D2, but you can call it a use case, node, component -- whatever you want it to be.
