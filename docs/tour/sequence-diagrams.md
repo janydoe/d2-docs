@@ -1,11 +1,5 @@
 # Sequence Diagrams
 
-:::caution
-Sequence diagrams are a new addition to D2 as of v0.1.0, with all the implications of a
-new feature. If you run into anything unexpected or missing, we'd appreciate it if you
-could help us improve it by [filing an issue](https://github.com/terrastruct/d2).
-:::
-
 Sequence diagrams are created by setting `shape: sequence_diagram` on an object.
 
 ```d2
@@ -214,19 +208,19 @@ shape: sequence_diagram
 scorer: { shape: person }
 scorer.t -> itemResponse.t: getItem()
 scorer.t <- itemResponse.t: item {
-    stroke-dash: 5
+    style.stroke-dash: 5
 }
 
 scorer.t -> item.t1: getRubric()
 scorer.t <- item.t1: rubric {
-    stroke-dash: 5
+    style.stroke-dash: 5
 }
 
 scorer.t -> essayRubric.t: applyTo(essayResp)
 itemResponse -> essayRubric.t.c
 essayRubric.t.c -> concept.t: match(essayResponse)
 scorer <- essayRubric.t: score {
-    stroke-dash: 5
+    style.stroke-dash: 5
 }
 
 scorer.t -> itemOutcome.t1: new

@@ -57,6 +57,11 @@ const config = {
           label: "Tour",
         },
         {
+          to: "blog",
+          label: "Blog",
+          position: "left",
+        },
+        {
           type: "doc",
           docId: "releases/intro",
           position: "left",
@@ -76,6 +81,7 @@ const config = {
     },
     colorMode: {
       defaultMode: "light",
+      disableSwitch: true,
       respectPrefersColorScheme: true,
     },
     prism: {
@@ -83,7 +89,7 @@ const config = {
       darkTheme: darkCodeTheme,
     },
     footer: {
-      copyright: `Copyright © ${new Date().getFullYear()} Terrastruct, Inc.`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://terrastruct.com">Terrastruct, Inc.</a>`,
     },
     algolia: {
       appId: "DWAXJIMTZU",
